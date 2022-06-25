@@ -1,0 +1,127 @@
+:root {
+    --light-blue: #dfeffd;
+    --light-grey: #f8f8f8;
+    --lighter-grey: #888;
+    --dark-grey: #333;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--light-blue); 
+    color: var(--dark-grey); 
+}
+
+/* Utilities */
+.container {
+    width: 90%; 
+    margin: auto; 
+}
+
+img {
+    width: 100%; 
+}
+
+span {
+    display: block;
+}
+
+/* Header */
+header {
+    background: rgb(253, 253, 253); 
+}
+
+nav {
+    height: 8vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+/* Burger */
+.burger {
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px; 
+    width: 25px; 
+    margin: 5px; 
+    border-radius: 10px;
+    background: var(--dark-grey);
+}
+
+/* Blog Posts */
+.blog_post_card {
+    background: var(--light-grey);
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: .5rem;
+}
+
+.blog_post_card h2 {
+    font-family: Domine, serif;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.img_caption {
+    font-size: .75rem;
+    color: var(--lighter-grey);
+}
+
+.author_name {
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem 0;
+    font-style: italic;
+}
+
+.blog_post_card p {
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-grey);
+}
+
+.footer-logo {
+    font-size: .75rem;
+    text-align: center;
+    padding: 2rem;
+    color: var(--light-grey); 
+}
+
+/* Media Queries */
+@media(min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .blog_post_card h2 {
+        font-size: 2.5rem;
+    }
+}
