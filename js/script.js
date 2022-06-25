@@ -1,4 +1,4 @@
-const url = "http://localhost/fedup/wordpress/wp-json/wp/v2/posts?_embed"; 
+const url = "https://trstest123.no/fedup/wp-json/wp/v2/posts?_embed"; 
 
 const blogPostsContainer = document.querySelector(".blog_posts_container"); 
 
